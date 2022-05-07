@@ -1,9 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.qr">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
    <application
         android:label="qr"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        
+        <meta-data android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyAC9XM_6bNwI2Us39g-sBwVoWmWqPy6QgU"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
